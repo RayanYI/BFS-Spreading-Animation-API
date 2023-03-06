@@ -32,18 +32,28 @@ void CGame::Dislplay(){
 void CGame::Events(){
     while (a_window->pollEvent(a_event))
     {
-        if (a_event.type == sf::Event::Closed)
-            a_window->close();
-
-       // if (a_event.type == sf::Event::KeyPressed){
-         //   if (a_event.key.code == sf::Keyboard::Enter)state=abs(state-1);
-        //}
+        if (a_event.type == sf::Event::Closed) a_window->close();
 
         if(a_event.type == sf::Event::MouseButtonPressed){
+            int i=a_event.mouseButton.y/(a_node_height+5),j=a_event.mouseButton.x/(a_node_width+5); 
+            std::cout<<i<<' '<<j<<std::endl;
             std::cout << "mouse x: " << a_event.mouseButton.x << std::endl;
             std::cout << "mouse y: " << a_event.mouseButton.y << std::endl;
+            if (a_event.mouseButton.button == sf::Mouse::Left){
+                if(flag[i][j]==1)flag[i][j]=0;
+                else flag[i][j]=1;
+            }else{
+                if(flag[i][j]==2)flag[i][j]=0;
+                else flag[i][j]=2;
+            }
+            ChangeColor(i,j,color_map[flag[i][j]]);
         }
+           
     }
+}
+
+void CGame::ChangeColor(int i,int j,sf::Color p_color){
+    a_matrix[i][j].setFillColor(p_color);
 }
 
 CGame::~CGame(){

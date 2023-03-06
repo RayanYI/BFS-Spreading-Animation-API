@@ -1,7 +1,7 @@
 #include "CGame.h"
 
 int main(){
-    CGame game(1600,900,"BFS Animation");
+    CGame game(500,500,"BFS Animation");
     while(game.IsOpen()){
         game.Events();
         game.Clear();
