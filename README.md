@@ -1,5 +1,5 @@
 # BFS-Spreading-Animation-API
-BFS Algortithm animation app realized with SFML.
+BFS Algortithm animation app made with SFML.
 
 The purpose of this project is to visualize the spread of the Breadth First Search Algortihm.
 
