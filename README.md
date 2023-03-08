@@ -6,7 +6,15 @@ The purpose of this project is to visualize the spread of the Breadth First Sear
 Controls:
 
   Left-click -> select exploration Nodes.
+  
+  
   Right-click -> select Walls(unexplorable Nodes).
+  
+  
   Enter -> start BFS animation.
+  
+  
   BackSpace -> reset.
+  
+  
   SpaceBar -> pause the animation.
