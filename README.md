@@ -4,8 +4,9 @@ BFS Algortithm animation app realized with SFML.
 The purpose of this project is to visualize the spread of the Breadth First Search Algortihm.
 
 Controls:
-  Left-click to select exploration Nodes.
-  Right-click to select Walls(unexplorable Nodes).
-  Enter to start BFS animation.
-  BackSpace to reset.
-  SpaceBar to pause the animation.
+
+  Left-click -> select exploration Nodes.
+  Right-click -> select Walls(unexplorable Nodes).
+  Enter -> start BFS animation.
+  BackSpace -> reset.
+  SpaceBar -> pause the animation.
