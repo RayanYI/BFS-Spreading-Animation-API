@@ -11,7 +11,7 @@ class CGame{
         int a_window_height=0,a_window_width=0,a_nbNode=0,a_nbWall=0;
         float a_node_height=0.0f,a_node_width=0.0f;
         bool a_started=false,a_paused=false;
-        const int n=50;
+        const int n=40;
         sf::RenderWindow* a_window=nullptr;
         sf::Event a_event;
         std::vector<std::vector<sf::RectangleShape>>a_matrix= std::vector<std::vector<sf::RectangleShape>>(n,std::vector<sf::RectangleShape>(n));

@@ -114,7 +114,7 @@ void CGame::Play(){
     sf::Clock clock;
     while(IsOpen()){
         Events();
-        if(clock.getElapsedTime().asSeconds()>=0.5 && GetState())Bfs(),clock.restart();
+        if(clock.getElapsedTime().asSeconds()>=0.1618f && GetState())Bfs(),clock.restart();
         Clear();
         Draw();
         Dislplay();
